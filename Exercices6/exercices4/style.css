@@ -1,0 +1,29 @@
+* {
+  background-color: none;
+}
+
+.titre1 {
+  text-align: center;
+}
+
+.paragraph1 {
+  background-color: darkorange;
+  text-align: center;
+}
+
+.paragraph2 {
+  background-color: deepskyblue;
+  text-align: center;
+}
+
+.paragraph2 p {
+  background-color: gold;
+}
+
+.paragraph2 p:nth-of-type(2n) {
+  margin: 40px;
+}
+
+.paragraph2 p:nth-of-type(3) {
+  padding: 40px;
+}
