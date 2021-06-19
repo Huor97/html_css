@@ -1,0 +1,100 @@
+/* ------------------------ premiere partie de formuler */
+.form1 {
+  display: flex;
+  justify-content: center;
+}
+
+.form1 form {
+  display: flex;
+  justify-content: flex-start;
+}
+.form1 form input {
+  background-color: #f5d2cc;
+  border: solid 2px #a5be00;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form1 fieldset {
+  padding-right: 240px;
+  background-color: #92dce5;
+  border: solid 1.5px rgb(161, 161, 161);
+}
+
+.form1 legend {
+  background-color: #92dce5;
+}
+/* ------------------------ deuxième partie de formuler */
+.form2 {
+  display: flex;
+  justify-content: center;
+}
+
+.form2 form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form2 form input {
+  background-color: #f5d2cc;
+  border: solid 2px #a5be00;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form2 fieldset {
+  padding-right: 240px;
+  background-color: #427aa1;
+  border: solid 1.5px rgb(161, 161, 161);
+}
+.form2 legend {
+  background-color: #427aa1;
+}
+#code_postal {
+  background-color: #f5d2cc;
+  border-radius: 5px;
+  border: solid 2px #a5be00;
+}
+/* ------------------------ troisième partie de formuler */
+.form3 {
+  display: flex;
+  justify-content: center;
+}
+.form3 form {
+  display: flex;
+  justify-content: flex-start;
+}
+.form3 form input {
+  background-color: #f5d2cc;
+  border: solid 2px #a5be00;
+  border-radius: 5px;
+  padding: 5px;
+}
+.form3 fieldset {
+  padding-right: 218px;
+  background-color: #05668d;
+  border: solid 1.5px rgb(161, 161, 161);
+}
+.form3 legend {
+  background-color: #05668d;
+}
+
+#button_radion {
+  margin-left: 36px;
+}
+/* ------------------------ quatrième partie de formuler */
+#button1 {
+  background-color: #a5be00;
+  margin-left: 252px;
+  border: solid 2px #d74b33;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#button1:hover {
+  background-color: hotpink;
+}
+#button1:active {
+  background-color: lawngreen;
+}
