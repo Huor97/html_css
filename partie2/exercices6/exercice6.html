@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- objectif: crée trois formulair. 1e: identité. 2e: adresse de livraison. 3e: information de réglement.  -->
+    <!-- 1: une formulair avec 1 titre et trois input: nom, prenom, adresse email -->
+    <div class="form1">
+      <form action="post">
+        <fieldset>
+          <legend>Votre identité</legend>
+          <ol>
+            <li>
+              <label for="nom">Nom:</label>
+              <input type="text" placeholder="Nom" />
+            </li>
+            <li>
+              <label for="prenom">Prenom:</label>
+              <input type="text" placeholder="Prénom" />
+            </li>
+            <li>
+              <label for="Adresse mail">Adresse mail:</label>
+              <input type="text" placeholder="Adresse mail" />
+            </li>
+          </ol>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- 2: une formulair avec 1 titre et troi input: adress, code postal, ville -->
+    <div class="form2">
+      <form action="post">
+        <fieldset>
+          <legend>Adresse de livraison</legend>
+          <ol>
+            <li>
+              <label for="adresse">Adresse:</label>
+              <textarea
+                name="code postal"
+                id="code_postal"
+                cols="26"
+                rows="5"
+              ></textarea>
+            </li>
+            <li>
+              <label for="code postal">Code postal:</label>
+              <input type="text" placeholder="Code postal" />
+            </li>
+            <li>
+              <label for="ville">Ville:</label>
+              <input type="text" placeholder="Ville" />
+            </li>
+          </ol>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- 3: une formulair avec 1 titre, deux button radion et trois input: type de carte banquer, numero de cart, code de sécurité, nom de titulaire  -->
+    <div class="form3">
+      <form action="post">
+        <fieldset>
+          <legend>Informations de réglement</legend>
+          <ol>
+            <li>
+              <label>Type de carte bancaire:</label> <br />
+              <!-- les input radion -->
+              <div id="button_radion">
+                <input
+                  type="radio"
+                  id="visa"
+                  name="drone"
+                  value="visa"
+                  checked
+                />
+                <label for="visa">VISA</label> <br />
+
+                <input
+                  type="radio"
+                  id="Mastercard"
+                  name="drone"
+                  value="Mastercard"
+                />
+                <label for="Mastercard">Mastercard</label>
+              </div>
+            </li>
+            <!-- les input normal -->
+            <li>
+              <label for="numéro de carte">Numéro de carte:</label>
+              <input type="text" placeholder="Numéro de carte" />
+            </li>
+            <li>
+              <label for="code de sécurité">Code de sécurité:</label>
+              <input type="text" placeholder="Code de sécurité" />
+            </li>
+            <li>
+              <label for="nom du titulaire">Nom du titulaire:</label>
+              <input type="text" placeholder="Nom du titulaire" />
+            </li>
+          </ol>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- 4: une button: j'achète -->
+    <button id="button1">J'achète!</button>
+  </body>
+</html>
