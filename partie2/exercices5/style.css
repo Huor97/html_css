@@ -1,7 +1,11 @@
 * {
   background-color: rgb(255, 255, 255);
 }
-
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 table {
   border-collapse: collapse;
   border: 1px solid rgb(31, 28, 28);
@@ -16,7 +20,6 @@ th {
 }
 
 td {
-  text-align: center;
   border: solid 1px rgb(31, 28, 28);
   padding: 10px 20px;
 }
@@ -31,4 +34,8 @@ caption {
 
 .credit2 {
   color: rgb(160, 18, 18);
+}
+
+tfoot {
+  text-align: center;
 }
