@@ -1,0 +1,107 @@
+* {
+  width: auto;
+  height: auto;
+  background-color: #eeb76f;
+}
+#div1 {
+  border: solid 1px #e6c294;
+  margin-left: 400px;
+  margin-right: 400px;
+  box-shadow: 2px 2px 2px #eb9a4f;
+}
+/* parti 1: style de titre 1 */
+.titre1 {
+  text-align: center;
+  padding: 50px;
+}
+
+/* parit 2: style section introduction 1. image 2. paragraphe italiqu */
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 2. paragraph italiqu dans section introduction */
+.paragraph1 {
+  margin-left: 20px;
+  max-width: 400px;
+  min-width: 400px;
+  font-style: italic;
+  font-size: large;
+}
+/* 1. image dans section introduction */
+.image1 {
+  width: 400px;
+  border-radius: 12px;
+}
+
+/* parti 3 icon tmps préparation, cuisson, deficulté */
+.icon {
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+}
+/* div prunssipale de parti 4 */
+.temps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+/* parti 4 crée un titre et un liste pour ingédients */
+.titre2 {
+  display: flex;
+  justify-content: center;
+}
+.ingredients {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ingredients ul {
+  margin-right: 115px;
+}
+.ingredients li {
+  list-style: none;
+  font-size: large;
+}
+/* partie 5 crée liste pour ingrédients */
+.preparation {
+  display: flex;
+  justify-content: space-evenly;
+}
+.preparation li {
+  align-items: center;
+  max-width: 400px;
+  font-size: large;
+}
+/* parti 6 piet de la page */
+.footer1 {
+  background-color: #2c2c2c;
+  width: 1088px;
+  max-width: 1088px;
+  margin-top: 50px;
+}
+.footer2 {
+  color: aliceblue;
+  background-color: #2c2c2c;
+  padding: 30px;
+}
+.footer1 p {
+  background-color: #2c2c2c;
+  color: aliceblue;
+}
+.footer1 li {
+  display: inline;
+  margin: 10px;
+
+  background-color: #2c2c2c;
+  list-style: none;
+  color: aliceblue;
+}
+.footer1 ul {
+  background-color: #2c2c2c;
+  color: aliceblue;
+}
