@@ -5,7 +5,7 @@
 /* premier ligne avec 2 bloc */
 .ligne1 {
   display: grid;
-  grid-template-columns: 80% 19%;
+  grid-template-columns: 80% 20%;
   grid-template-rows: 35px;
 }
 .blocVert {
@@ -19,7 +19,7 @@
 /* deuxième ligne avec 3 bloc */
 .ligne2 {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 34%;
   grid-template-rows: 60px;
 }
 .blocRouge {
@@ -37,7 +37,7 @@
 /* troixième ligne avec 4 bloc */
 .ligne3 {
   display: grid;
-  grid-template-columns: 33% 22% 22% 22%;
+  grid-template-columns: 33% 22% 22% 23%;
   grid-template-rows: 60px;
 }
 
@@ -53,7 +53,7 @@
 /* quatrième lign avec 1 bloc */
 .ligne4 {
   display: grid;
-  grid-template-columns: 99%;
+  grid-template-columns: 100%;
   grid-template-rows: 150px;
 }
 
