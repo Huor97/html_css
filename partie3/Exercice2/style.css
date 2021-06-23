@@ -1,0 +1,31 @@
+.imgicon {
+  width: 30px;
+  height: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 1px #918e8e;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  padding: 10px;
+  text-decoration: none;
+}
+.imgicon {
+  visibility: hidden;
+}
+/* changer style avec action de écrant si la taille est plus petite  que 768px alor faire visible icon et dévisible le liste */
+@media screen and (max-width: 768px) {
+  .imgicon {
+    visibility: visible;
+  }
+  .menu {
+    visibility: hidden;
+  }
+}

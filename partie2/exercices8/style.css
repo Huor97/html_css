@@ -5,8 +5,8 @@
 }
 #div1 {
   border: solid 1px #e6c294;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin: auto;
+  width: 1000px;
   box-shadow: 2px 2px 2px #eb9a4f;
 }
 /* parti 1: style de titre 1 */
