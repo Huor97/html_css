@@ -1,0 +1,49 @@
+.divPrinsipal {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 80px 30px 40px;
+  column-gap: 50px;
+  row-gap: 50px;
+  background-color: rosybrown;
+  justify-content: center;
+}
+
+.blocRouge {
+  background-color: rgb(255, 25, 0);
+}
+
+.blocBleuClare {
+  background-color: skyblue;
+}
+
+.blocVert {
+  background-color: #4b8668;
+}
+
+.blocViolet {
+  background-color: violet;
+}
+
+.blocOrange {
+  background-color: #f0790a;
+}
+
+.blocBleu {
+  background-color: rgb(0, 153, 255);
+  grid-column: 2;
+  grid-column-start: 4;
+}
+
+.blocRose {
+  background-color: rgb(233, 6, 120);
+}
+
+.blocvertClair {
+  background-color: yellowgreen;
+  grid-column: 3;
+  grid-column-start: 3;
+}
+
+.blocBleuFoncer {
+  background-color: #042b75;
+}
