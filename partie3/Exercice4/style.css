@@ -1,3 +1,4 @@
+/* style pour parant */
 .divPrinsipal {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -9,7 +10,7 @@
 }
 
 .blocRouge {
-  background-color: rgb(255, 25, 0);
+  background-color: #ff1900;
 }
 
 .blocBleuClare {
@@ -29,23 +30,23 @@
 }
 
 .blocBleu {
-  background-color: rgb(0, 153, 255);
+  background-color: #0099ff;
   grid-column-start: 4;
 }
 
 .blocRose {
-  background-color: rgb(233, 6, 120);
+  background-color: #e90678;
 }
 
 .blocvertClair {
-  background-color: yellowgreen;
+  background-color: #9acd32;
   grid-column-start: 3;
 }
 
 .blocBleuFoncer {
   background-color: #042b75;
 }
-
+/* style pour parant quand la tail est 1022px et moin  */
 @media screen and (max-width: 1022px) {
   .divPrinsipal {
     display: grid;
