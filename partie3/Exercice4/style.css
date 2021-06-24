@@ -1,0 +1,60 @@
+/* style pour parant */
+.divPrinsipal {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 80px 30px 40px;
+  column-gap: 50px;
+  row-gap: 50px;
+  background-color: rosybrown;
+  justify-content: center;
+}
+
+.blocRouge {
+  background-color: #ff1900;
+}
+
+.blocBleuClare {
+  background-color: skyblue;
+}
+
+.blocVert {
+  background-color: #4b8668;
+}
+
+.blocViolet {
+  background-color: violet;
+}
+
+.blocOrange {
+  background-color: #f0790a;
+}
+
+.blocBleu {
+  background-color: #0099ff;
+  grid-column-start: 4;
+}
+
+.blocRose {
+  background-color: #e90678;
+}
+
+.blocvertClair {
+  background-color: #9acd32;
+  grid-column-start: 3;
+}
+
+.blocBleuFoncer {
+  background-color: #042b75;
+}
+/* style pour parant quand la tail est 1022px et moin  */
+@media screen and (max-width: 1022px) {
+  .divPrinsipal {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 30px 40px;
+    column-gap: 50px;
+    row-gap: 50px;
+    background-color: rosybrown;
+    justify-content: center;
+  }
+}
