@@ -1,11 +1,241 @@
-.imageHeader {
+* {
+  width: auto;
+  height: auto;
+}
+
+/* ---------------------- partie 1 */
+/* header style: back grounde image et un titre niveux1 */
+.imageTitre {
+  margin: 0px;
+  padding: 0px;
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-image: url("header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-size: 100%;
   font-family: "Big Shoulders Stencil Display", cursive;
   font-size: 75px;
+  box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+}
+/* ----------------------- partie 2 */
+/* header menu style: 4 anglet et une barre de recherche et une button pour barre de recherch  */
+/* classe menu: pour style parant */
+.menu {
+  display: grid;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  background-color: #fcfcfc;
+  box-shadow: 1px 1px 1px 1px #98989c;
+}
+
+/* pour style text les 4 angler */
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* pour style le list parti (./div/ul) */
+.menu .list1 {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}
+/* pour style de list parti (ul) */
+.menu ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* pour style de list parti (li) */
+.menu li {
+  list-style: none;
+}
+/* pour style de barre de recherch et button */
+.menu .barreButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* pour style de barre de recherch */
+.barreButton .barDeRecherch {
+  border-radius: 5px;
+  border: solid 1px rgb(165, 162, 168);
+  width: 200px;
+}
+/* ---------------------- partie 3 */
+/* paragraph style (div parant) */
+.textPresentation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+/* paragraph style (div enfant) */
+.textPresentation div {
+  width: 76%;
+  border: solid 1px #dddbdd;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #bebcbc;
+  font-size: 30px;
+  padding: 5px;
+}
+.textPresentation p {
+  font-size: medium;
+  text-align: justify;
+  margin: 2px;
+  padding: 2px;
+}
+/* ---------------------- partie 4 */
+/* style pour les trois bloc qui ont une photo une titre une paragraph */
+.blocSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 10px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px 15px 0px 0px;
+}
+.blocSection div {
+  border: solid 1px rgb(209, 204, 204);
+  box-shadow: 1px 1px 1px 1px #e2dede;
+  border-radius: 15px;
+}
+.blocSection h2 {
+  margin: 5px;
+}
+
+.blocSection p {
+  margin: 5px;
+  text-align: justify;
+}
+
+/* menu style respinsive */
+@media screen and (max-width: 768px) {
+  /* ---------------------- partie 1 */
+  /* header style: back grounde image et un titre niveux1 */
+  .imageTitre {
+    margin-left: -10px;
+    padding-right: 19px;
+    margin-top: -9px;
+    width: 100%;
+    height: 282px;
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: 745px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Big Shoulders Stencil Display", cursive;
+    font-size: 50px;
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  }
+  /* ----------------------- partie 2 */
+  /* header menu style: 4 anglet et une barre de recherche et une button pour barre de recherch  */
+  /* classe menu: pour style parant */
+  .menu {
+    margin-left: -11px;
+    padding-right: 19px;
+    border-left: 3px;
+    border-right-width: 17px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #fcfcfc;
+    align-items: center;
+  }
+  /* pour style de list parti (ul) */
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* pour style de list parti (li) */
+  .menu ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  /* style pour balis a (une action) change colore */
+  .menu ul li a:hover {
+    color: orange;
+  }
+  /* pour style de barre de recherch et button */
+  .menu .barreButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 5px;
+  }
+  /* pour style de barre de recherch */
+  .barreButton .barDeRecherch {
+    border-radius: 5px;
+    border: solid 1px rgb(165, 162, 168);
+    padding: 10px;
+    width: 97%;
+  }
+  /* style pour le button de barrde de recherche */
+  .barreButton button {
+    width: 90%;
+    padding: 10px;
+    margin: 3px;
+  }
+  /* partie 4 */
+  /* style pour les trois bloc qui ont une photo une titre une paragraph */
+  .blocSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    align-items: center;
+  }
+  .blocSection div {
+    width: 75%;
+    border: solid 1px rgb(209, 204, 204);
+    box-shadow: 1px 1px 1px 1px #e2dede;
+    border-radius: 15px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* ---------------------- partie 1 */
+  /* header style: back grounde image et un titre niveux1 */
+  .imageTitre {
+    min-width: 100%;
+    margin-left: -10px;
+    padding-right: 19px;
+    margin-top: -9px;
+    width: 100%;
+    height: 100px;
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: 375px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Big Shoulders Stencil Display", cursive;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  }
 }
