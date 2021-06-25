@@ -1,6 +1,8 @@
 * {
   width: auto;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 /* ---------------------- partie 1 */
@@ -27,11 +29,10 @@
 .menu {
   display: grid;
   width: 100%;
-  height: 50px;
   grid-template-columns: 75% 25%;
   grid-template-rows: 1fr 1fr;
   align-items: center;
-  justify-items: end;
+  justify-items: center;
   background-color: #fcfcfc;
   box-shadow: 1px 1px 1px 1px #98989c;
 }
@@ -45,6 +46,7 @@
 /* pour style le list parti (./div/ul) */
 .menu .list1 {
   width: 90%;
+  height: 0px;
   display: flex;
   justify-content: end;
 }
@@ -87,6 +89,7 @@
   box-shadow: 1px 1px 1px 1px #bebcbc;
   font-size: 30px;
   padding: 5px;
+  background-color: #feffff;
 }
 .textPresentation p {
   font-size: medium;
@@ -115,6 +118,7 @@ img {
   border: solid 1px rgb(209, 204, 204);
   box-shadow: 1px 1px 1px 1px #e2dede;
   border-radius: 15px;
+  background-color: rgba(253, 251, 237, 0.836);
 }
 .blocSection h2 {
   margin: 5px;
