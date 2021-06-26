@@ -4,131 +4,149 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 733px) {
+  /* ---------------------- partie 1 */
+  /* header style: back grounde image et un titre niveux1 */
+  .imageTitre {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Big Shoulders Stencil Display", cursive;
+    font-size: 75px;
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  }
+  /* ----------------------- partie 2 */
+  /* header menu style: 4 anglet et une barre de recherche et une button pour barre de recherch  */
+  /* classe menu: pour style parant */
+  .menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 1px 1px #98989c;
+  }
 
-/* ---------------------- partie 1 */
-/* header style: back grounde image et un titre niveux1 */
-.imageTitre {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 500px;
-  background-image: url("header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  font-family: "Big Shoulders Stencil Display", cursive;
-  font-size: 75px;
-  box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
-}
-/* ----------------------- partie 2 */
-/* header menu style: 4 anglet et une barre de recherche et une button pour barre de recherch  */
-/* classe menu: pour style parant */
-.menu {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  background-color: #fcfcfc;
-  box-shadow: 1px 1px 1px 1px #98989c;
-}
+  /* pour style text les 4 angler */
+  .menu li a {
+    text-decoration: none;
+    color: black;
+  }
 
-/* pour style text les 4 angler */
-.menu li a {
-  text-decoration: none;
-  color: black;
-}
+  /* pour style le list parti (./div/ul) */
+  .menu .list1 {
+    width: 90%;
+    height: 0px;
+    display: flex;
+    justify-content: end;
+  }
+  /* pour style de list parti (ul) */
+  .menu ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* pour style de list parti (li) */
+  .menu li {
+    list-style: none;
+  }
+  /* style pour balis a (une action) change colore */
+  .menu ul li a:hover {
+    color: orange;
+  }
+  /* pour style de barre de recherch et button */
+  .menu .barreButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 9px;
+  }
+  /* pour style de barre de recherch */
+  .barreButton .barDeRecherch {
+    border-radius: 5px;
+    border: solid 1px rgb(165, 162, 168);
+    width: 200px;
+  }
+  .barreButton button {
+    background-color: burlywood;
+    border-radius: 5px;
+    border: solid 1px #d8d8d8;
+    width: 20%;
+  }
+  /* button serche caracter */
+  .barreButton button:hover {
+    background-color: #f3c188;
+  }
+  .barreButton button:active {
+    background-color: #ff9a02;
+  }
+  /* ---------------------- partie 3 */
+  /* paragraph style (div parant) */
+  .textPresentation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  /* paragraph style (div enfant) */
+  .textPresentation div {
+    width: 76%;
+    border: solid 1px #dddbdd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #bebcbc;
+    font-size: 30px;
+    padding: 5px;
+    background-color: #feffff;
+  }
+  .textPresentation p {
+    font-size: medium;
+    text-align: justify;
+    margin: 2px;
+    padding: 2px;
+  }
+  /* ---------------------- partie 4 */
+  /* style pour les trois bloc qui ont une photo une titre une paragraph */
+  .blocSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 10px;
+    column-gap: 20px;
+    justify-content: center;
+  }
 
-/* pour style le list parti (./div/ul) */
-.menu .list1 {
-  width: 90%;
-  height: 0px;
-  display: flex;
-  justify-content: end;
-}
-/* pour style de list parti (ul) */
-.menu ul {
-  width: 90%;
-  display: flex;
-  justify-content: space-evenly;
-}
-/* pour style de list parti (li) */
-.menu li {
-  list-style: none;
-}
-/* pour style de barre de recherch et button */
-.menu .barreButton {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-/* pour style de barre de recherch */
-.barreButton .barDeRecherch {
-  border-radius: 5px;
-  border: solid 1px rgb(165, 162, 168);
-  width: 200px;
-}
-/* ---------------------- partie 3 */
-/* paragraph style (div parant) */
-.textPresentation {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-/* paragraph style (div enfant) */
-.textPresentation div {
-  width: 76%;
-  border: solid 1px #dddbdd;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px #bebcbc;
-  font-size: 30px;
-  padding: 5px;
-  background-color: #feffff;
-}
-.textPresentation p {
-  font-size: medium;
-  text-align: justify;
-  margin: 2px;
-  padding: 2px;
-}
-/* ---------------------- partie 4 */
-/* style pour les trois bloc qui ont une photo une titre une paragraph */
-.blocSection {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin-top: 10px;
-  column-gap: 20px;
-  justify-content: center;
-}
+  img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .blocSection div {
+    border: solid 1px rgb(209, 204, 204);
+    box-shadow: 1px 1px 1px 1px #e2dede;
+    border-radius: 15px;
+    background-color: rgba(253, 251, 237, 0.836);
+  }
+  .blocSection h2 {
+    margin: 5px;
+  }
 
-img {
-  width: 100%;
-  height: 300px;
-  border-radius: 15px 15px 0px 0px;
+  .blocSection p {
+    margin: 5px;
+    text-align: justify;
+  }
 }
-.blocSection div {
-  border: solid 1px rgb(209, 204, 204);
-  box-shadow: 1px 1px 1px 1px #e2dede;
-  border-radius: 15px;
-  background-color: rgba(253, 251, 237, 0.836);
-}
-.blocSection h2 {
-  margin: 5px;
-}
-
-.blocSection p {
-  margin: 5px;
-  text-align: justify;
-}
-
 /* menu style respinsive */
 @media screen and (max-width: 768px) {
   /* ---------------------- partie 1 */
@@ -151,7 +169,7 @@ img {
     box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
   }
   /* ----------------------- partie 2 */
-  /* header menu style: 4 anglet et une barre de recherche et une button pour barre de recherch  */
+  /* header menu style: 4 anglet et une barre de recherche et une button pour barre de recherch */
   /* classe menu: pour style parant */
   .menu {
     margin-left: -11px;
@@ -166,16 +184,30 @@ img {
     background-color: #fcfcfc;
     align-items: center;
   }
+  /* pour style text les 4 angler */
+  .menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  /* pour style le list parti (./div/ul) */
+  .menu .list1 {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+  }
+
   /* pour style de list parti (ul) */
   .menu ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
+
   /* pour style de list parti (li) */
   .menu ul li {
     padding: 10px;
     text-align: center;
+    list-style: none;
   }
   /* style pour balis a (une action) change colore */
   .menu ul li a:hover {
@@ -183,10 +215,10 @@ img {
   }
   /* pour style de barre de recherch et button */
   .menu .barreButton {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
     padding: 5px;
   }
   /* pour style de barre de recherch */
@@ -201,16 +233,56 @@ img {
     width: 90%;
     padding: 10px;
     margin: 3px;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: solid 1px rgb(218, 211, 211);
+    cursor: pointer;
   }
-  /* partie 4 */
+  /* button serche caracter */
+  .barreButton button:hover {
+    background-color: #f3c188;
+  }
+  .barreButton button:active {
+    background-color: #ff9a02;
+  }
+  /* ---------------------- partie 3 */
+  /* paragraph style (div parant) */
+  .textPresentation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  /* paragraph style (div enfant) */
+  .textPresentation div {
+    width: 76%;
+    border: solid 1px #dddbdd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #bebcbc;
+    font-size: 30px;
+    padding: 5px;
+    background-color: #feffff;
+  }
+  .textPresentation p {
+    font-size: large;
+    text-align: justify;
+    margin: 2px;
+    padding: 2px;
+  }
+  /* ----------------------partie 4 */
   /* style pour les trois bloc qui ont une photo une titre une paragraph */
   .blocSection {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-
     align-items: center;
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
   }
   .blocSection div {
     width: 75%;
@@ -218,6 +290,13 @@ img {
     box-shadow: 1px 1px 1px 1px #e2dede;
     border-radius: 15px;
     margin: 20px;
+  }
+  .blocSection h2 {
+    margin: 5px;
+  }
+  .blocSection p {
+    margin: 5px;
+    text-align: justify;
   }
 }
 
